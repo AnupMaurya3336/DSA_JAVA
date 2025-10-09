@@ -1,0 +1,25 @@
+package Session8_Array_Basic;
+
+public class reverse_array {
+    public static void main(String[] args) {
+        int [] arr={3,5,7,8,6};
+        reverse(arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+            
+        }
+        }
+        public static void reverse(int [] arr){
+            int i=0;
+            int j=arr.length-1;
+            while (i<j) {
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+
+                i++;
+                j--;  
+            }
+        }
+    
+}
